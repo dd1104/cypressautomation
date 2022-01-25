@@ -4,7 +4,7 @@
 
 describe('verify the read & write operation', () => {
 
-    it('verify the write funrtion', () => {
+    it('verify the write function', () => {
         cy.writeFile('textOne.txt', "Learning Javasript & Cypress \n")
         cy.writeFile('textOne.txt', "Hello", { flag: 'a+' })
     })
